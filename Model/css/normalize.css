@@ -1,0 +1,50 @@
+/* Normalize
+   ========================================================================== 
+*/
+
+* {
+    margin-top: 0px;
+}
+
+
+html {
+    line-height: 1.15;
+}
+
+
+
+main {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+h1,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+img {
+    border-style: none;
+}
+
+ol {
+    list-style: none;
+}
