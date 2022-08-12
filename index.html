@@ -8,39 +8,114 @@
         <title>Alexis VILLARS</title>
         <link rel="stylesheet" href="Model/css/index.css">
         <link rel="stylesheet" href="Model/css/normalize.css">
-        <script src="https://kit.fontawesome.com/c6120faab6.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ac7cd1554d.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-
-        <header class="flex">
-            <a class="logoLink" href="#"><img class="logo" src="Model/img/logo.png" alt="logo"></a>
+        <!--header-->
+        <header class="outfit flex between centerItems">
+            <a class="centerText" href="#"><img class="logo" src="Model/img/logo.png" alt="logo"></a>
             <nav>
-                <ul class="menu flex">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#MyJob">My job</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#">CV</a></li>
+                <ul class="menu flex between">
+                    <li><a class="brown" href="#Home">Home</a></li>
+                    <li><a class="brown" href="#MyJob">My job</a></li>
+                    <li><a class="brown" href="#Portfolio">Portfolio</a></li>
+                    <li><a class="brown" href="#">CV</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="home">
-                <div class="home flex">
+            <!-- section home -->
+            <section id="Home">
+                <div class="nunito home flex">
                     <img src="./Model/img/photo_portfolio4.png" alt="picture of Alexis VILLARS">
-                    <div class="flex homeText">
-                        <H1><span>&lt</span>Welcome</H1>
-                        <H2>on my website<span>/&gt</span></H2>
-                        <p>I am Alexis Villars</p>
+                    <div class="flex center homeText black">
+                        <H1><span class="green">&lt</span>Welcome</H1>
+                        <H2>on my website<span class="green">/&gt</span></H2>
+                        <p class="outfit brown">I am Alexis Villars</p>
                     </div>
                 </div>
                 <div class="divH3">
-                    <H3>Junior Web Developer</H3>
+                    <H3 class="nunito bgGreen">Junior Web Developer</H3>
                 </div>
             </section>
-            
-
+            <!--section My Job-->
+            <section id="MyJob">
+                <H2 class="nunito black centerText">My Job</H2>
+                <div class="flex  centerItems jobText">
+                    <span>
+                        <i class="fa-solid fa-compass-drafting green"></i>
+                        <i class="fa-solid fa-pencil green"></i>
+                    </span>
+                    <p class="outfit"> 
+                        You are a company, or an indepandant entrepreneur, you want a business website or an online shop ? 
+                        According to your requirements and ideas, i  help you to determinate the specifications, <br> and i will
+                        conceive  the website that suits you or your company
+                    </p>
+                </div>
+                <div class="flex  centerItems  jobText">
+                    <span>
+                        <i class="fa-solid fa-mobile-screen green"></i>
+                        <i class="fa-solid fa-desktop green"></i>
+                    </span>
+                    <p class="outfit">
+                        I devellop for you a secured  website based on a responsive design that will  correspond to all types of screens <br> 
+                        on all your devices !
+                    </p>
+                </div>
+                <div class="flex  centerItems  jobText">
+                    <span>
+                        <i class="fa-solid fa-handshake-simple green"></i>
+                    </span>
+                    <p class="outfit">
+                        I guarentee a ready to use and user friendly website 
+                        I have an individual approach for every customer and i can answer to all your questions
+                    </p>
+                </div>
+            </section>
+            <!--section Portfolio-->
+            <section id="Portfolio">
+                <H2 class="nunito black centerText">Portfolio</H2>
+                <div class="flex center imgdiv">
+                    <article class="flex">
+                        <a class="centerText" href="#"><img src="./Model/img/réservia.jpg" alt="picture of website reservia"></a>
+                        <span>
+                            <i class="fa-brands fa-html5 green"></i>
+                            <i class="fa-brands fa-css3 green"></i>
+                            <a class="outfit black" href="#">Reservia</a>
+                        </span>
+                        
+                    </article>
+                    <article class="flex">
+                        <a class="centerText" href="#"><img src="./Model/img/ohmyfood.jpg" alt="picture of website oh my food"></a>
+                        <span>
+                            <i class="fa-brands fa-html5 green"></i>
+                            <i class="fa-brands fa-sass green"></i>
+                            <a class="outfit black" href="#">Oh My Food</a>
+                        </span>
+                    </article>
+                </div>
+                <div class="flex center imgdiv">
+                    <article class="flex">
+                        <a class="centerText" href="#"><img src="./Model/img/réservia.jpg" alt="picture of website reservia"></a>
+                        <span>
+                            <i class="fa-brands fa-html5 green"></i>
+                            <i class="fa-brands fa-css3 green"></i>
+                            <a class="outfit black" href="#">Reservia</a>
+                        </span>
+                        
+                    </article>
+                    <article class="flex">
+                        <a class="centerText" href="#"><img src="./Model/img/ohmyfood.jpg" alt="picture of website oh my food"></a>
+                        <span>
+                            <i class="fa-brands fa-html5 green"></i>
+                            <i class="fa-brands fa-sass green"></i>
+                            <a class="outfit black" href="#">Oh My Food</a>
+                        </span>
+                    </article>
+                </div>
+            </section>
         </main>
 
         <footer>

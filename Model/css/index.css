@@ -1,11 +1,50 @@
 /*polices*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
 
-/* ----classes réutilisables---- */
+/* ----usefull classes---- */
+.black {
+    color: #0D0D0D;
+}
+
+.brown {
+    color: #A67841;
+}
+
+.green {
+    color: #3A8C75;
+}
+
+.bgGreen {
+    background-color: #3A8C75;
+}
+
 .flex {
     display: flex;
+}
+
+.center {
+    justify-content: center;
+}
+
+.centerItems {
+    align-items: center;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.outfit {
+    font-family: 'Outfit', sans-serif;
 }
 
 /* ---------rules on all page -------*/
@@ -15,15 +54,21 @@
 
 /*-------rules on body-------*/
 body {
-    margin: 10px 20px 0 20px;
+    height: 8000px;
+    margin: 10px 20px 0px 25px;
 }
 
 
 /*------start header--------*/
 header {
-    justify-content: space-between;
-    font-family: 'Outfit', sans-serif;
-
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    margin: 0;
+    top: 0%;
+    right: 0%;
+    box-shadow: 0 0.1px 3px 0 rgba(13, 13, 13, 0.38);
+    z-index: 1;
 }
 
 nav {
@@ -31,19 +76,17 @@ nav {
 }
 
 .menu {
-    width: 100%;
-    justify-content: space-around;
+    width: 91%;
 }
 
 .menu a {
-    color: #A67841;
     font-size: 1.5em;
     font-weight: 500;
     border-bottom: 3px solid transparent;
 }
 
 .menu li a:hover,
-.menu li a:focus {
+.menu li a:active {
     color: #3A8C75;
     border-color: #3A8C75;
 }
@@ -54,74 +97,176 @@ header a .logo {
 
 /*-----end hearder*------*/
 
-
-/*----- section home ------*/
-#home img {
-    object-fit: cover;
-    width: 30%;
-    margin-bottom: -1em;
+/*------- main--------*/
+main {
+    margin: auto;
+    margin-top: 3em;
 
 }
 
-#home {
-    justify-content: center;
-    align-items: center;
+/*----- section home ------*/
+#Home img {
+    object-fit: cover;
+    width: 36%;
     border-bottom: #3A8C75 2px solid;
+
+}
+
+#Home {
+    width: 88%;
+    margin: auto;
     overflow: hidden;
+}
+
+.home {
+    width: 100%;
+    margin-left: -1em;
 }
 
 .homeText {
     width: 60%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    align-items: flex-start;
 }
 
 .homeText H1 {
-    font-family: 'Nunito', sans-serif;
     font-size: 7em;
     font-weight: 300;
+    position: relative;
+    left: 1em
 }
 
 .homeText span {
-    color: #3A8C75;
     padding: 0 0.1em;
 }
 
 .homeText H2 {
-    color: #0D0D0D;
-    font-family: 'Nunito', sans-serif;
     font-size: 4.4em;
     font-weight: 300;
-    padding: 0 0 0 3.4em;
+    position: relative;
+    left: 3.5em;
 }
 
 .homeText p {
-    color: #A67841;
-    font-family: 'Outfit', sans-serif;
     width: 41.5%;
-    text-align: right;
+    text-align: end;
     font-size: 2em;
-    margin: 0 0 2em 0;
+    position: relative;
+    left: 4em;
 }
 
 .divH3 {
     text-align: end;
-    width: 30%;
+    width: 55%;
     position: absolute;
-    right: 5.3em;
-    margin-top: -2.2em;
+    right: 11em;
+    margin: -4.6em 0 2em 0;
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 h3 {
+    font-weight: 500;
     color: #f5f5f5;
-    font-size: 2em;
-    background-color: #3A8C75;
-    padding-right: 1em;
+    font-size: 4em;
+    padding-right: 1.7em;
+}
+
+/*------ end Home ----------*/
+
+/*--------my job-------*/
+#MyJob {
+    width: 90%;
+    margin: auto;
 }
 
 
+#MyJob H2 {
+    font-size: 4em;
+    margin: 2em 0 0.5em 0;
+}
+
+#MyJob span {
+    letter-spacing: 4em;
+    width: 8em;
+    margin-right: 3em;
+}
+
+#MyJob i {
+    width: 10%;
+    font-size: 4em;
+}
+
+.jobText {
+    width: 80%;
+    height: 12em;
+    margin: auto;
+}
+
+.jobText p {
+    font-size: 1.3em;
+}
 
 
-/*------ end Home ----------*/
+#MyJob .fa-desktop {
+    font-size: 4.5em;
+    position: relative;
+    right: 0.4em;
+}
+
+#MyJob .fa-mobile-screen {
+    font-size: 3rem;
+}
+
+#MyJob .fa-handshake-simple {
+    font-size: 6.2em;
+}
+
+/*----------end my job---------*/
+
+/*---------Portfolio-----------*/
+#Portfolio H2 {
+    font-size: 3em;
+    margin: 1em 0 1em 0;
+}
+
+.imgdiv {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+#Portfolio img {
+
+    width: 90%;
+    height: 260px;
+}
+
+#Portfolio i {
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 0.4em;
+    left: 1em;
+    top: 25%
+}
+
+article {
+    flex-direction: column;
+}
+
+article img {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+article span a {
+    position: relative;
+    font-size: 1.5em;
+    left: 5em;
+    top: 10%;
+}
+
+article a:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+    transition-duration: 0.2s;
+}
