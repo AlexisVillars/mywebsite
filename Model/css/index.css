@@ -56,6 +56,11 @@
     background-color: #f5f5f5;
 }
 
+/*-----------rules on body-----------*/
+body {
+    margin: 0;
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(-30px);
@@ -64,13 +69,13 @@
 .reveal-visible {
     opacity: 1;
     transform: translateY(0);
-    transition: 1s;
+    transition: 1s cubic-bezier(.33, 0, .56, 1.01);
 }
 
 /*------start header--------*/
 header {
     position: fixed;
-    height: 5em;
+    height: 5.5em;
     width: 100%;
     margin: 0;
     top: 0%;
@@ -154,7 +159,7 @@ main {
     left: 3.5em;
 }
 
-.homeText p {
+#Home p {
     width: 41.5%;
     text-align: end;
     font-size: 2em;
@@ -406,7 +411,7 @@ main {
 
 .contact {
     width: 100%;
-    margin: 3em 0 0;
+    margin: 2em 0 0;
 }
 
 .contact a {
@@ -449,13 +454,20 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10em;
-    grid-row-gap: 6em;
+    grid-row-gap: 4em;
 }
+
+
 
 article img {
     width: 100%;
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.29);
     border-radius: 20px;
+    transition: all 0.1s ease-out;
+}
+
+article img:hover {
+    transform: scale(1.02);
 }
 
 article h4 {
@@ -494,4 +506,47 @@ footer i {
     width: 25%;
     flex-direction: column;
     align-items: center;
+}
+
+/*---------media queries -------------*/
+@media (max-width: 1500px) {
+    #Home .home img {
+        border: none;
+    }
+
+    .divH3 {
+        right: 5em;
+        margin: -4.6em 0 0 0;
+    }
+
+    #Home H3 {
+        padding-right: 0.5em;
+    }
+}
+
+@media (max-width: 1370px) {
+    .homeText H1 {
+        font-size: 7em;
+        font-weight: 300;
+        position: relative;
+        left: 0;
+    }
+
+    .homeText H2 {
+        left: 2em;
+    }
+
+    #Home H3 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1180px) {
+    #Home H1 {
+        font-size: 5em;
+    }
+
+    #Home H2 {
+        font-size: 3em;
+    }
 }
