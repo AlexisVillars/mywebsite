@@ -59,6 +59,7 @@
 /*-----------rules on body-----------*/
 body {
     margin: 0;
+    min-width: 360px;
 }
 
 .reveal {
@@ -731,6 +732,12 @@ footer i {
         margin-bottom: 1em;
     }
 
+    #MyJob H2,
+    #Portfolio H2 {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
     .articles {
         display: grid;
         grid-template-columns: 1fr;
@@ -770,7 +777,8 @@ footer i {
     }
 
     #Home H2 {
-        font-size: 1.5em;
+        font-size: 1.29em;
+        left: 1.3em;
     }
 
 
@@ -805,8 +813,18 @@ footer i {
         font-size: 0.8em;
     }
 
+    #MyJob H2,
+    #Portfolio H2 {
+        font-size: 1.3em;
+        margin-bottom: 2em;
+    }
+
     .contact {
         font-size: 0.7em;
+    }
+
+    article h4 {
+        font-size: 1em;
     }
 
 }
