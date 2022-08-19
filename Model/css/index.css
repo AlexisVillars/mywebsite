@@ -85,6 +85,7 @@ header {
 }
 
 nav {
+    margin-top: 0.7em;
     width: 50%;
 }
 
@@ -105,6 +106,7 @@ nav {
 }
 
 header a .logo {
+    margin-left: 1em;
     width: 50%;
 }
 
@@ -549,4 +551,262 @@ footer i {
     #Home H2 {
         font-size: 3em;
     }
+
+    #Home p {
+        font-size: 1.6em;
+    }
+
+    .divH3 {
+        width: 50%;
+        text-align: center;
+    }
+
+    #Home H3 {
+        font-size: 2.5em;
+        padding-right: 0em;
+    }
+}
+
+@media (max-width: 1000px) {
+    #Home H1 {
+        font-size: 4em;
+    }
+
+    #Home H2 {
+        font-size: 2.5em;
+    }
+
+    #Home p {
+        font-size: 1.3em;
+    }
+
+    .divH3 {
+        width: 45%;
+    }
+
+    #Home H3 {
+        font-size: 2.2em;
+    }
+
+    #MyJob H2 {
+        margin-bottom: 1.5em;
+    }
+
+    #MyJob p {
+        font-size: 1.2em;
+    }
+
+    .articles {
+        grid-column-gap: 3em;
+        grid-row-gap: 1em;
+    }
+
+    footer {
+        margin-top: 1.7em;
+    }
+}
+
+
+@media (max-width: 850px) {
+    header {
+        height: 60px;
+    }
+
+    header a .logo {
+        width: 40%;
+    }
+
+    nav {
+        width: 70%;
+    }
+
+    .menu a {
+        font-size: 1em;
+        border: none;
+    }
+
+    #Home H1 {
+        font-size: 3em;
+    }
+
+    #Home H2 {
+        font-size: 2em;
+    }
+
+    #Home p {
+        font-size: 1em;
+    }
+
+    .divH3 {
+        width: 45%;
+    }
+
+    #Home H3 {
+        font-size: 1.5em;
+    }
+
+    .textBar span {
+        padding: 10px 20px 10px 0;
+    }
+
+    #MyJob H2,
+    #Portfolio H2 {
+        font-size: 2em;
+    }
+
+    #MyJob p {
+        font-size: 1em;
+    }
+
+    .skills {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .bar {
+        width: 98%;
+        height: 12px;
+    }
+
+    #MyJob h4 {
+        font-size: 1.1em;
+    }
+
+    #MyJob span {
+        font-size: 1em;
+    }
+
+    .articles {
+        grid-column-gap: 2em;
+        grid-row-gap: 1em;
+    }
+
+    footer i {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 700px) {
+    .divH3 {
+        position: absolute;
+        margin: -1em 0 2em 0;
+        clip-path: none;
+    }
+
+    #Home h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    #Home H1 {
+        font-size: 2em;
+    }
+
+    #Home H2 {
+        font-size: 1.5em;
+    }
+
+    #Home p {
+        font-size: 1em;
+    }
+
+    .divH3 {
+        width: 45%;
+    }
+
+    #Home H3 {
+        font-size: 1em;
+    }
+
+    #Home p {
+        font-size: 0.7em;
+    }
+
+    #MyJob h4 {
+        margin-bottom: 1em;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 1em;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+
+    .line {
+        width: 15%;
+        height: 3px;
+        margin: 0.2em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 50px;
+    }
+
+    header a .logo {
+        width: 30%;
+    }
+
+    .menu {
+        font-size: 0.8em;
+    }
+
+    #Home H1 {
+        font-size: 2em;
+    }
+
+    #Home H2 {
+        font-size: 1.5em;
+    }
+
+
+    .divH3 {
+        text-align: center;
+        width: 45%;
+        margin-top: -1em;
+        right: 2.5em;
+    }
+
+    #Home H3 {
+        font-size: .8em;
+    }
+
+    #Home p {
+        font-size: 0.6em;
+    }
+
+    .textBar span {
+        padding: 5px 20px 5px 0;
+    }
+
+    #MyJob {
+        font-size: 1em;
+    }
+
+    #MyJob span {
+        font-size: 0.8em;
+    }
+
+    #MyJob p {
+        font-size: 0.8em;
+    }
+
+    .contact {
+        font-size: 0.7em;
+    }
+
 }
