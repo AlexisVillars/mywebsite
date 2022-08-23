@@ -85,6 +85,14 @@ header {
     z-index: 1;
 }
 
+.sidenav {
+    display: none;
+}
+
+#openBtn {
+    display: none;
+}
+
 nav {
     margin-top: 0.7em;
     width: 50%;
@@ -767,8 +775,81 @@ footer i {
         width: 30%;
     }
 
+    .divOpenBtn {
+        width: 5%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
     .menu {
-        font-size: 0.8em;
+        display: none;
+    }
+
+    #openBtn {
+        display: block;
+    }
+
+    .sidenav {
+        display: block;
+        height: 22%;
+        width: 150px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        padding-top: 15px;
+        right: -200px;
+        transition: right 0.5s ease;
+        box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.29);
+
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding-bottom: 40px;
+        text-decoration: none;
+        font-size: 1.1em;
+        color: #A67841;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #3A8C75;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        right: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        color: #3A8C75;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        font-size: 36px;
+    }
+
+    .sidenav .close:hover {
+        color: #A67841;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #A67841;
+        margin: 3px 0;
     }
 
     #Home H1 {
