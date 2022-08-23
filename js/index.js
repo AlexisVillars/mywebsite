@@ -33,12 +33,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
         observerBar.observe(r);
     })
 
-    var sidenav = document.getElementById("mySidenav");
-    var openBtn = document.getElementById("openBtn");
-    var closeBtn = document.getElementById("closeBtn");
+    const main = document.getElementById("main");
+    const sidenav = document.getElementById("mySidenav");
+    const openBtn = document.getElementById("openBtn");
+    const closeBtn = document.getElementById("closeBtn");
+    const navlinks = Array.from(document.querySelectorAll(`li`));
+    console.log(navlinks)
+    navlinks.forEach(e => {
+        e.onclick = closeNav;
+    });
+
 
     openBtn.onclick = openNav;
     closeBtn.onclick = closeNav;
+    main.onclick = closeNav;
 
     /* Set the width of the side navigation to 250px */
     function openNav() {

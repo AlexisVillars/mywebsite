@@ -23,27 +23,28 @@
                     <li><a class="brown" href="#">CV</a></li>
                 </ul>
                 <div class="divOpenBtn">
-                    <a href="#" id="openBtn">
+                    <div id="openBtn">
                         <span class="burger-icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </span>
-                      </a>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </span>
+                    </div>
+                        
                 </div>
                 <div id="mySidenav" class="sidenav">
-                    <a id="closeBtn" href="#" class="close">×</a>
+                    <span id="closeBtn" class="close">×</span>
                     <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">My Job</a></li>
-                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#Home">Home</a></li>
+                      <li><a href="#MyJob">My Job</a></li>
+                      <li><a href="#Portfolio">Portfolio</a></li>
                       <li><a href="#">CV</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <main>
+        <main id="main">
             <!-- section home -->
             <section id="Home">
                 <div class="nunito home flex">
@@ -60,7 +61,9 @@
             </section>
             <!--section My Job-->
             <section id="MyJob">
-                <H2 class="nunito black">My Job</H2>
+                <div class="H2anchor">
+                    <H2 class="nunito black">My Job</H2>
+                </div>
                 <div class="jobText black outfit">
                     <p class="reveal"> 
                         You would like to create a website for yourself or for your business ? <br> 

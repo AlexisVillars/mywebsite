@@ -51,6 +51,11 @@
     font-family: 'Outfit', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5em;
+}
+
 /* ---------rules on all page -------*/
 * {
     background-color: #f5f5f5;
@@ -788,11 +793,16 @@ footer i {
 
     #openBtn {
         display: block;
+        cursor: pointer;
+    }
+
+    #closeBtn {
+        cursor: pointer;
     }
 
     .sidenav {
         display: block;
-        height: 23%;
+        height: 240px;
         width: 150px;
         position: fixed;
         z-index: 1;
@@ -804,9 +814,19 @@ footer i {
 
     }
 
+
     /* Sidenav menu links */
+    .sidenav {
+        border-radius: 5px;
+    }
+
+    .sidenav li {
+        width: 70px;
+        margin: auto;
+    }
+
     .sidenav a {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
         text-decoration: none;
         font-size: 1.1em;
         color: #A67841;
@@ -837,6 +857,7 @@ footer i {
         top: 0;
         left: 5px;
         font-size: 36px;
+        margin: 0;
     }
 
     .sidenav .close:hover {
