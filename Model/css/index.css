@@ -184,7 +184,7 @@ main {
 }
 
 .divH3 {
-    text-align: end;
+
     width: 55%;
     position: absolute;
     right: 11em;
@@ -193,10 +193,11 @@ main {
 }
 
 #Home h3 {
+    text-align: center;
     font-weight: 500;
     color: #f5f5f5;
     font-size: 4em;
-    padding-right: 1.7em;
+    padding-left: 1em;
 }
 
 /*------ end Home ----------*/
@@ -410,7 +411,7 @@ main {
 }
 
 .cms:nth-child(1) .progress {
-    width: 60%;
+    width: 30%;
     animation: 2s wordpress;
 }
 
@@ -420,7 +421,7 @@ main {
     }
 
     100% {
-        width: 60%;
+        width: 30%;
     }
 }
 
@@ -536,7 +537,7 @@ footer i {
     }
 
     #Home H3 {
-        padding-right: 0.5em;
+        font-size: 3em;
     }
 }
 
@@ -743,10 +744,6 @@ footer i {
         width: 45%;
     }
 
-    #Home H3 {
-        font-size: 1em;
-    }
-
     #Home p {
         font-size: 0.7em;
     }
@@ -902,7 +899,9 @@ footer i {
     }
 
     #Home H3 {
-        font-size: .8em;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: .7em;
     }
 
     #Home p {
@@ -945,5 +944,10 @@ footer i {
     .divH3 {
         position: relative;
         left: 150px;
+        min-width: 156px;
+    }
+
+    #Home H3 {
+        padding: 0 2px;
     }
 }
