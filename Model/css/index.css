@@ -541,6 +541,10 @@ footer i {
 }
 
 @media (max-width: 1370px) {
+    nav {
+        width: 60%;
+    }
+
     .homeText H1 {
         font-size: 7em;
         font-weight: 300;
@@ -576,12 +580,18 @@ footer i {
     }
 
     #Home H3 {
-        font-size: 2.5em;
+        font-size: 2.3em;
         padding-right: 0em;
     }
 }
 
 @media (max-width: 1000px) {
+
+    .menu a {
+        font-size: 1.2em;
+        border: none;
+    }
+
     #Home H1 {
         font-size: 4em;
     }
@@ -599,7 +609,7 @@ footer i {
     }
 
     #Home H3 {
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
     #MyJob H2 {
@@ -822,6 +832,7 @@ footer i {
 
     .sidenav li {
         width: 70px;
+        font-size: 0.99em;
         margin: auto;
     }
 
@@ -928,4 +939,11 @@ footer i {
         font-size: 1em;
     }
 
+}
+
+@media (max-width: 330px) {
+    .divH3 {
+        position: relative;
+        left: 150px;
+    }
 }
