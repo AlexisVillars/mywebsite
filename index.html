@@ -1,168 +1,198 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Site web portofolio d'Alexis VILLARS développeur web junior">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alexis VILLARS</title>
-        <link rel="stylesheet" href="Model/css/index.css">
-        <link rel="stylesheet" href="Model/css/normalize.css">
-        <script src="https://kit.fontawesome.com/ac7cd1554d.js" crossorigin="anonymous"></script>
-    </head>
 
-    <body>
-        <!--header-->
-        <header class="outfit flex between centerItems">
-            <span><a class="centerText" href="#"><img class="logo" src="Model/img/logo.png" alt="logo"></a></span>
-            <nav>
-                <ul class="menu flex between">
-                    <li><a class="brown" href="#Home">Acceuil</a></li>
-                    <li><a class="brown" href="#MyJob">À propos de moi</a></li>
-                    <li><a class="brown" href="#Portfolio">Portfolio</a></li>
-                    <li><a class="brown" href="download/../Model/files/cv alexis.pdf">CV</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site web portofolio d'Alexis VILLARS développeur web junior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis VILLARS</title>
+    <link rel="stylesheet" href="Model/css/index.css">
+    <link rel="stylesheet" href="Model/css/normalize.css">
+    <script src="https://kit.fontawesome.com/ac7cd1554d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header class="outfit flex between centerItems">
+        <span><a class="centerText" href="#"><img class="logo" src="Model/img/logo.png" alt="logo"></a></span>
+        <nav>
+            <ul class="menu flex between">
+                <li><a class="brown" href="#Home">Acceuil</a></li>
+                <li><a class="brown" href="#MyJob">À propos de moi</a></li>
+                <li><a class="brown" href="#Portfolio">Portfolio</a></li>
+                <li><a class="brown" href="download/../Model/files/cvAlexis-VILLARS.pdf">CV</a></li>
+            </ul>
+            <div class="divOpenBtn">
+                <div id="openBtn">
+                    <span class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <span id="closeBtn" class="close">×</span>
+                <ul>
+                    <li><a href="#Home">Acceuil</a></li>
+                    <li><a href="#MyJob">À propos</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="download/../Model/files/cvAlexis-VILLARS.pdf">CV</a></li>
                 </ul>
-                <div class="divOpenBtn">
-                    <div id="openBtn">
-                        <span class="burger-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </span>
-                    </div>
-                        
-                </div>
-                <div id="mySidenav" class="sidenav">
-                    <span id="closeBtn" class="close">×</span>
-                    <ul>
-                      <li><a href="#Home">Acceuil</a></li>
-                      <li><a href="#MyJob">À propos</a></li>
-                      <li><a href="#Portfolio">Portfolio</a></li>
-                      <li><a href="download/../Model/files/cv alexis.pdf">CV</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <main id="main">
-            <!-- section home -->
-            <section id="Home">
-                <div class="nunito home flex">
-                    <img src="./Model/img/photo_portfolio4.png" alt="picture of Alexis VILLARS">
-                    <div class="flex center homeText black">
-                        <H1><span class="green">&lt</span>Bienvenue</H1>
-                        <H2>sur mon site<span class="green">/&gt</span></H2>
-                        <p class="outfit brown">Je suis Alexis</p>
-                    </div>
+    <main id="main">
+        <!-- section home -->
+        <section id="Home">
+            <div class="nunito home flex">
+                <img src="./Model/img/photo_portfolio4.png" alt="picture of Alexis VILLARS">
+                <div class="flex center homeText black">
+                    <H1><span class="green">&lt</span>Bienvenue</H1>
+                    <H2>sur mon site<span class="green">/&gt</span></H2>
+                    <p class="outfit brown">Je suis Alexis</p>
                 </div>
-                <div class="divH3">
-                    <H3 class="nunito bgGreen">Développeur web junior</H3>
-                </div>
-            </section>
-            <!--section My Job-->
-            <section id="MyJob">
-                <div class="H2anchor">
-                    <H2 class="nunito black">À propos de moi</H2>
-                </div>
-                <div class="jobText black outfit">
-                    <p class="reveal"> 
-                        Salut je m'appelle Alexis<br>Récemment lancé dans la création de sites web et diplômé en tant que développeur web je suis passionné par le nouveau milieu dans lequel j'évolue. <br>
-                        Je suis curieux, rigoureux dans mon travail, et surout motivé pour apprendre pleins de nouvelles choses <br>
-                        Vous pourrez trouver sur ce site des réalisations lors de ma formations, l'évolution de mes compétences aisin que d'autres projets personnels à venir !
-                    </p>
-                    <div class="reveal flex skills-container">
-                        <div class="flex skills">
-                            <h4>Frontend</h4>
-                            <div class="flex">
-                                <div class="textBar flex">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>SCSS</span>
-                                    <span>JS</span>
-                                    <span>React.JS</span>
-                                </div>
-                                <div class="bar-container flex">    
-                                    <div class="bar front"><div class="reveal-bar"></div></div>
-                                    <div class="bar front"><div class="reveal-bar"></div></div>
-                                    <div class="bar front"><div class="reveal-bar"></div></div>
-                                    <div class="bar front"><div class="reveal-bar"></div></div>
-                                    <div class="bar front"><div class="reveal-bar"></div></div>
-                                </div>      
+            </div>
+            <div class="divH3">
+                <H3 class="nunito bgGreen">Développeur web junior</H3>
+            </div>
+        </section>
+        <!--section My Job-->
+        <section id="MyJob">
+            <div class="H2anchor">
+                <H2 class="nunito black">À propos de moi</H2>
+            </div>
+            <div class="jobText black outfit">
+                <p class="reveal">
+                    Salut je m'appelle Alexis<br>Récemment lancé dans la création de sites web et diplômé en tant que
+                    développeur web je suis passionné par le nouveau milieu dans lequel j'évolue. <br>
+                    Je suis curieux, rigoureux dans mon travail, et surout motivé pour apprendre pleins de nouvelles
+                    choses <br>
+                    Vous pourrez trouver sur ce site des réalisations lors de ma formations, l'évolution de mes
+                    compétences aisin que d'autres projets personnels à venir !
+                </p>
+                <div class="reveal flex skills-container">
+                    <div class="flex skills">
+                        <h4>Frontend</h4>
+                        <div class="flex">
+                            <div class="textBar flex">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>SCSS</span>
+                                <span>JS</span>
+                                <span>React.JS</span>
                             </div>
-                        </div>
-                        <div class="flex skills">
-                            <h4>Backend</h4>
-                            <div class="flex">
-                                <div class="textBar flex">
-                                    <span>Node.JS</span>
-                                    <span>Express</span>
-                                    <span>MySQL</span>
-                                    <span>MongoDB</span>
+                            <div class="bar-container flex">
+                                <div class="bar front">
+                                    <div class="reveal-bar"></div>
                                 </div>
-                                <div class="bar-container flex">    
-                                    <div class="bar back"><div class="reveal-bar"></div></div>
-                                    <div class="bar back"><div class="reveal-bar"></div></div>
-                                    <div class="bar back"><div class="reveal-bar"></div></div>
-                                    <div class="bar back"><div class="reveal-bar"></div></div>
-                                </div>      
-                            </div>
-                        </div>
-                        <div class="flex skills">
-                            <h4>CMS</h4>
-                            <div class="flex">
-                                <div class="textBar flex">
-                                    <span>Wordpress</span>
+                                <div class="bar front">
+                                    <div class="reveal-bar"></div>
                                 </div>
-                                <div class="bar-container flex">    
-                                    <div class="bar cms"><div class="reveal-bar"></div></div>
-                                </div>      
+                                <div class="bar front">
+                                    <div class="reveal-bar"></div>
+                                </div>
+                                <div class="bar front">
+                                    <div class="reveal-bar"></div>
+                                </div>
+                                <div class="bar front">
+                                    <div class="reveal-bar"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="contact">
-                        <a href="#footer">Contactez moi<i class="fa-solid fa-arrow-down white bgGreen"></i></a>
+                    <div class="flex skills">
+                        <h4>Backend</h4>
+                        <div class="flex">
+                            <div class="textBar flex">
+                                <span>Node.JS</span>
+                                <span>Express</span>
+                                <span>MySQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="bar-container flex">
+                                <div class="bar back">
+                                    <div class="reveal-bar"></div>
+                                </div>
+                                <div class="bar back">
+                                    <div class="reveal-bar"></div>
+                                </div>
+                                <div class="bar back">
+                                    <div class="reveal-bar"></div>
+                                </div>
+                                <div class="bar back">
+                                    <div class="reveal-bar"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>                       
-            </section>
-            <!--section Portfolio-->
-            <section id="Portfolio">
-                <H2 class="nunito black reveal">Portfolio</H2>
-                <div class="articles outfit">
-                    <article class="reveal">
-                        <a href="https://alexisvillars.github.io/Reservia/"><img src="Model/img/réservia_resized.jpg" alt="photo of website reservia"></a>
-                        <h4>Reservia</h4>
-                    </article>
-                    <article class="reveal">
-                        <a href="https://alexisvillars.github.io/OhMyFood/"><img src="Model/img/ohmyfood_resized.jpg" alt="photo of website ohmyfood"></a>
-                        <h4>OhMyFood</h4>
-                    </article>
-                    <article class="reveal">
-                        <a href="https://github.com/AlexisVillars/Kanap"><img src="Model/img/kanp_resized.jpg" alt="photo of website kanap"></a>
-                        <h4>Kanap</h4>
-                    </article>
-                    <article class="reveal">
-                        <a href="https://github.com/AlexisVillars/Groupomania"><img src="Model/img/group_resized.jpg" alt="photo of website groupomania"></a>
-                        <h4>Groupomania</h4>
-                    </article>
+                    <div class="flex skills">
+                        <h4>CMS</h4>
+                        <div class="flex">
+                            <div class="textBar flex">
+                                <span>Wordpress</span>
+                            </div>
+                            <div class="bar-container flex">
+                                <div class="bar cms">
+                                    <div class="reveal-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer id="footer" class="flex bgGreen">
-            <div class="flex footerLinks bgGreen">
-                <a href="mailto:villars.alexis@gmail.com"><i class="fa-solid fa-envelope white bgGreen"></i></a>
-                <a class="bgGreen white outfit" href="mailto:villars.alexis@gmail.com">villars.alexis@gmail.com</a>
+                <div class="contact">
+                    <a href="#footer">Contactez moi<i class="fa-solid fa-arrow-down white bgGreen"></i></a>
+                </div>
             </div>
-            <div class="white line"></div>
-            <div class="flex footerLinks bgGreen">
-                <a href="tel:+33674564557"><i class="fa-solid fa-phone white bgGreen"></i></a>
-                <a class="white outfit" href="tel:+33674564557">0674564557</a>
+        </section>
+        <!--section Portfolio-->
+        <section id="Portfolio">
+            <H2 class="nunito black reveal">Portfolio</H2>
+            <div class="articles outfit">
+                <article class="reveal">
+                    <a href="https://alexisvillars.github.io/Reservia/"><img src="Model/img/réservia_resized.jpg"
+                            alt="photo of website reservia"></a>
+                    <h4>Reservia</h4>
+                </article>
+                <article class="reveal">
+                    <a href="https://alexisvillars.github.io/OhMyFood/"><img src="Model/img/ohmyfood_resized.jpg"
+                            alt="photo of website ohmyfood"></a>
+                    <h4>OhMyFood</h4>
+                </article>
+                <article class="reveal">
+                    <a href="https://github.com/AlexisVillars/Kanap"><img src="Model/img/kanp_resized.jpg"
+                            alt="photo of website kanap"></a>
+                    <h4>Kanap</h4>
+                </article>
+                <article class="reveal">
+                    <a href="https://github.com/AlexisVillars/Groupomania"><img src="Model/img/group_resized.jpg"
+                            alt="photo of website groupomania"></a>
+                    <h4>Groupomania</h4>
+                </article>
             </div>
-            <div class="white line"></div>
-            <div class="flex footerLinks bgGreen">
-                <a href="https://www.linkedin.com/in/alexis-villars-155420188/"><i class="fa-brands fa-linkedin white bgGreen"></i></a>
-                <a class="white outfit" href="#">Alexis Villars</a>
-            </div>
-        </footer>
-        <script src="./js/index.js"></script>
-    </body>
+        </section>
+    </main>
+    <footer id="footer" class="flex bgGreen">
+        <div class="flex footerLinks bgGreen">
+            <a href="mailto:villars.alexis@gmail.com"><i class="fa-solid fa-envelope white bgGreen"></i></a>
+            <a class="bgGreen white outfit" href="mailto:villars.alexis@gmail.com">villars.alexis@gmail.com</a>
+        </div>
+        <div class="white line"></div>
+        <div class="flex footerLinks bgGreen">
+            <a href="tel:+33674564557"><i class="fa-solid fa-phone white bgGreen"></i></a>
+            <a class="white outfit" href="tel:+33674564557">0674564557</a>
+        </div>
+        <div class="white line"></div>
+        <div class="flex footerLinks bgGreen">
+            <a href="https://www.linkedin.com/in/alexis-villars-155420188/"><i
+                    class="fa-brands fa-linkedin white bgGreen"></i></a>
+            <a class="white outfit" href="#">Alexis Villars</a>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
 </html>
