@@ -51,6 +51,8 @@
     font-family: 'Outfit', sans-serif;
 }
 
+
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 6.5em;
@@ -65,6 +67,7 @@ html {
 body {
     margin: 0;
     min-width: 360px;
+
 }
 
 .reveal {
@@ -89,6 +92,19 @@ header {
     box-shadow: 0 0.1px 3px 0 rgba(13, 13, 13, 0.38);
     z-index: 1;
 }
+
+.language-options {
+    display: flex;
+}
+
+.language-options a {
+    color: #3A8C75;
+    margin: 0 0.8em
+}
+
+
+
+
 
 .sidenav {
     display: none;
@@ -118,6 +134,7 @@ nav {
     color: #3A8C75;
     border-color: #3A8C75;
 }
+
 
 header a .logo {
     margin-left: 1em;
@@ -164,6 +181,10 @@ main {
     left: 1em
 }
 
+.homeText .ru-h1 {
+    font-size: 4.6em;
+}
+
 .homeText span {
     padding: 0 0.1em;
 }
@@ -174,6 +195,7 @@ main {
     position: relative;
     left: 3.5em;
 }
+
 
 #Home p {
     width: 41.5%;
@@ -199,6 +221,9 @@ main {
     font-size: 4em;
     padding-left: 1em;
 }
+
+
+
 
 /*------ end Home ----------*/
 
@@ -497,6 +522,95 @@ article h4 {
 
 /*--------- end portfolio -------*/
 
+/* ---------------contact-form ------------*/
+
+#contact-form {
+    width: 90%;
+    margin: auto;
+
+}
+
+#contact-form H2 {
+    font-size: 2.5em;
+    margin: 2em 0 2em 0;
+    position: relative;
+}
+
+#contact-form H2::after {
+
+    content: "";
+    width: 1.5em;
+    height: 3.5px;
+    background-color: #3A8C75;
+    position: absolute;
+    display: block;
+    left: 3px;
+    top: 1.8em;
+
+}
+
+#my-form {
+    background-color: transparent;
+    padding: 16px;
+    color: #A67841;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px #4141412d;
+    width: 50%;
+    margin: auto;
+}
+
+#my-form label {
+    font-size: 20px;
+    display: block;
+}
+
+
+#my-form input,
+#my-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+#my-form textarea {
+    min-height: 10em;
+}
+
+#my-form input:focus,
+#my-form textarea:focus {
+    border-color: #3A8C75;
+    outline: none;
+}
+
+#my-form-button {
+    width: 25%;
+    min-width: 103px;
+    background-color: #3A8C75;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.2s ease;
+}
+
+#my-form-button:hover {
+    background-color: #3a8c75d5;
+}
+
+#my-form-status {
+    margin-top: 12px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /*---------- footer -----------*/
 footer {
     height: 250px;
@@ -525,6 +639,13 @@ footer i {
     align-items: center;
 }
 
+
+
+
+
+
+
+
 /*---------media queries -------------*/
 @media (max-width: 1500px) {
     #Home .home img {
@@ -533,18 +654,24 @@ footer i {
 
     .divH3 {
         right: 5em;
-        margin: -4.6em 0 0 0;
+        margin: -4.7em 0 0 0;
     }
 
     #Home H3 {
         font-size: 3em;
     }
+
+    #Home .ru {
+        font-size: 3em;
+    }
+
 }
 
 @media (max-width: 1370px) {
     nav {
         width: 60%;
     }
+
 
     .homeText H1 {
         font-size: 7em;
@@ -553,18 +680,36 @@ footer i {
         left: 0;
     }
 
-    .homeText H2 {
-        left: 2em;
+    .homeText .ru-h1 {
+        font-size: 3.6em;
     }
+
+    .homeText .ru-h2 {
+        font-size: 2.6em;
+    }
+
 
     #Home H3 {
         font-size: 3em;
+
     }
+
+    #Home .ru {
+        font-size: 2.5em;
+        margin-top: 2em;
+
+
+    }
+
 }
 
 @media (max-width: 1180px) {
     #Home H1 {
         font-size: 5em;
+    }
+
+    #Home .homeText .ru-h1 {
+        font-size: 3.2em;
     }
 
     #Home H2 {
@@ -595,6 +740,10 @@ footer i {
 
     #Home H1 {
         font-size: 4em;
+    }
+
+    #Home .homeText .ru-h1 {
+        font-size: 2.5em;
     }
 
     #Home H2 {
@@ -633,158 +782,13 @@ footer i {
 
 
 @media (max-width: 850px) {
+
     header {
         height: 60px;
     }
 
     header a .logo {
         width: 40%;
-    }
-
-    nav {
-        width: 70%;
-    }
-
-    .menu a {
-        font-size: 1em;
-        border: none;
-    }
-
-    #Home H1 {
-        font-size: 3em;
-    }
-
-    #Home H2 {
-        font-size: 2em;
-    }
-
-    #Home p {
-        font-size: 1em;
-    }
-
-    .divH3 {
-        width: 45%;
-    }
-
-    #Home H3 {
-        font-size: 1.5em;
-    }
-
-    .textBar span {
-        padding: 10px 20px 10px 0;
-    }
-
-    #MyJob H2,
-    #Portfolio H2 {
-        font-size: 2em;
-    }
-
-    #MyJob p {
-        font-size: 1em;
-    }
-
-    .skills {
-        width: 100%;
-        margin-bottom: 2em;
-    }
-
-    .skills-container {
-        flex-direction: column;
-    }
-
-    .bar {
-        width: 98%;
-        height: 12px;
-    }
-
-    #MyJob h4 {
-        font-size: 1.1em;
-    }
-
-    #MyJob span {
-        font-size: 1em;
-    }
-
-    .articles {
-        grid-column-gap: 2em;
-        grid-row-gap: 1em;
-    }
-
-    footer i {
-        font-size: 2.5em;
-    }
-}
-
-@media (max-width: 700px) {
-    .divH3 {
-        position: absolute;
-        margin: -1em 0 2em 0;
-        clip-path: none;
-    }
-
-    #Home h3 {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 600px) {
-    #Home H1 {
-        font-size: 2em;
-    }
-
-    #Home H2 {
-        font-size: 1.5em;
-    }
-
-    #Home p {
-        font-size: 1em;
-    }
-
-    .divH3 {
-        width: 45%;
-    }
-
-    #Home p {
-        font-size: 0.7em;
-    }
-
-    #MyJob h4 {
-        margin-bottom: 1em;
-    }
-
-    #MyJob H2,
-    #Portfolio H2 {
-        font-size: 1.5em;
-        margin-bottom: 2em;
-    }
-
-    .articles {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-row-gap: 1em;
-    }
-
-    footer {
-        flex-direction: column;
-        height: 400px;
-
-    }
-
-    .line {
-        width: 15%;
-        height: 3px;
-        margin: 0.2em 0;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        height: 50px;
-    }
-
-    header a .logo {
-        width: 30%;
     }
 
     .divOpenBtn {
@@ -809,7 +813,7 @@ footer i {
 
     .sidenav {
         display: block;
-        height: 240px;
+        height: 300px;
         width: 150px;
         position: fixed;
         z-index: 1;
@@ -881,6 +885,199 @@ footer i {
         margin: 3px 0;
     }
 
+    .language-options {
+        visibility: hidden;
+    }
+
+    .language-options-side {
+        justify-content: center;
+    }
+
+    .language-options a,
+    .language-options-side a {
+        margin: 0 0.4em;
+        font-weight: 300;
+        color: #3A8C75;
+    }
+
+    .menu a {
+        font-size: 1em;
+        border: none;
+    }
+
+    #Home H1 {
+        font-size: 3em;
+    }
+
+    #Home .homeText .ru-h1 {
+        font-size: 2em;
+    }
+
+    #Home H2 {
+        font-size: 2em;
+    }
+
+    #Home p {
+        font-size: 1em;
+    }
+
+    .divH3 {
+        width: 45%;
+    }
+
+    #Home H3 {
+        font-size: 1.5em;
+    }
+
+    .textBar span {
+        padding: 10px 20px 10px 0;
+    }
+
+    #MyJob H2,
+    #Portfolio H2,
+    #contact-form H2 {
+        font-size: 2em;
+    }
+
+    #MyJob p {
+        font-size: 1em;
+    }
+
+    .skills {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .bar {
+        width: 98%;
+        height: 12px;
+    }
+
+    #MyJob h4 {
+        font-size: 1.1em;
+    }
+
+    #MyJob span {
+        font-size: 1em;
+    }
+
+    .articles {
+        grid-column-gap: 2em;
+        grid-row-gap: 1em;
+    }
+
+    #my-form {
+        width: 90%;
+    }
+
+    #my-form textarea {
+        min-height: 6.5em;
+    }
+
+    footer i {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 700px) {
+    .divH3 {
+        position: absolute;
+        margin: -1em 0 2em 0;
+        clip-path: none;
+    }
+
+    #Home .homeText .ru-h1 {
+        font-size: 1.6em;
+    }
+
+    #Home .homeText .ru-h2 {
+        font-size: 1.6em;
+    }
+
+    #Home h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    #Home H1 {
+        font-size: 2em;
+    }
+
+    #Home .homeText .ru-h1 {
+        font-size: 1.4em;
+    }
+
+    #Home .homeText .ru-h2 {
+        font-size: 1.4em;
+    }
+
+    #Home H2 {
+        font-size: 1.5em;
+    }
+
+    #Home p {
+        font-size: 1em;
+
+    }
+
+    .divH3 {
+        width: 45%;
+    }
+
+    #Home p {
+        font-size: 0.7em;
+    }
+
+    #MyJob h4 {
+        margin-bottom: 1em;
+    }
+
+    #MyJob H2,
+    #Portfolio H2,
+    #contact-form H2 {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 1em;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    .line {
+        width: 15%;
+        height: 3px;
+        margin: 0.2em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 50px;
+    }
+
+    header a .logo {
+        width: 30%;
+    }
+
+    #Home p {
+        margin-bottom: 2em;
+    }
+
+
     #Home H1 {
         font-size: 2em;
     }
@@ -925,7 +1122,8 @@ footer i {
     }
 
     #MyJob H2,
-    #Portfolio H2 {
+    #Portfolio H2,
+    #contact-form H2 {
         font-size: 1.3em;
         margin-bottom: 2em;
     }

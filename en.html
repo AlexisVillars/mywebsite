@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Site web portofolio d'Alexis VILLARS développeur web junior">
+    <meta name="description" content="Website of Alexis VILLARS, junior web developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexis VILLARS</title>
     <link rel="stylesheet" href="Model/css/index.css">
@@ -18,10 +18,10 @@
         <span><a class="centerText" href="#"><img class="logo" src="Model/img/logo.png" alt="logo"></a></span>
         <nav>
             <ul class="menu flex between">
-                <li><a class="brown" href="#Home">Acceuil</a></li>
-                <li><a class="brown" href="#MyJob">À propos de moi</a></li>
+                <li><a class="brown" href="#Home">Home</a></li>
+                <li><a class="brown" href="#MyJob">About me</a></li>
                 <li><a class="brown" href="#Portfolio">Portfolio</a></li>
-                <li><a class="brown" href="download/../Model/files/CV-Alexis-Français.pdf">CV</a></li>
+                <li><a class="brown" href="download/../Model/files/cvAlexis-VILLARS.pdf">CV</a></li>
             </ul>
             <div class="divOpenBtn">
                 <div id="openBtn">
@@ -31,24 +31,23 @@
                         <span></span>
                     </span>
                 </div>
-
             </div>
             <div id="mySidenav" class="sidenav">
                 <span id="closeBtn" class="close">×</span>
                 <ul>
-                    <li><a href="#Home">Acceuil</a></li>
-                    <li><a href="#MyJob">À propos</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#MyJob">About me</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="download/../Model/files/CV-Alexis-Français.pdf">CV</a></li>
+                    <li><a href="download/../Model/files/cvAlexis-VILLARS.pdf">CV</a></li>
                 </ul>
                 <div class="language-options-side flex">
-                    <a href="./en.html">En</a>
+                    <a href="./index.html">Fr</a>
                     <a href="./ru.html">Ru</a>
                 </div>
             </div>
         </nav>
         <div class="language-options">
-            <a href="./en.html">En</a>
+            <a href="./index.html">Fr</a>
             <a href="./ru.html">Ru</a>
         </div>
     </header>
@@ -59,28 +58,29 @@
             <div class="nunito home flex">
                 <img src="./Model/img/photo_portfolio4.png" alt="picture of Alexis VILLARS">
                 <div class="flex center homeText black">
-                    <H1><span class="green">&lt</span>Bienvenue</H1>
-                    <H2>sur mon site<span class="green">/&gt</span></H2>
-                    <p class="outfit brown">Je suis Alexis</p>
+                    <H1><span class="green">&lt</span>Welcome</H1>
+                    <H2>on my website<span class="green">/&gt</span></H2>
+                    <p class="outfit brown">I am Alexis</p>
                 </div>
             </div>
             <div class="divH3">
-                <H3 class="nunito bgGreen">Développeur web junior</H3>
+                <H3 class="nunito bgGreen">Junior Web Developer</H3>
             </div>
         </section>
         <!--section My Job-->
         <section id="MyJob">
             <div class="H2anchor">
-                <H2 class="nunito black">À propos de moi</H2>
+                <H2 class="nunito black">About me</H2>
             </div>
             <div class="jobText black outfit">
                 <p class="reveal">
-                    Salut je m'appelle Alexis<br>Récemment lancé dans la création de sites web et diplômé en tant que
-                    développeur web je suis passionné par le nouveau milieu dans lequel j'évolue. <br>
-                    Je suis curieux, rigoureux dans mon travail, et surout motivé pour apprendre pleins de nouvelles
-                    choses <br>
-                    Vous pourrez trouver sur ce site des réalisations lors de ma formation, l'évolution de mes
-                    compétences aisin que d'autres projets personnels à venir !
+                    Hello, my name is Alexis. <br>
+                    Recently launched into creating websites and graduated as a web developer, I am passionate about the
+                    new field in which I am evolving. <br>
+                    I am curious, rigorous in my work, and most importantly motivated to learn new things. <br>
+                    On this site you will find achievements from my training, the evolution of my skills and some
+                    personal projects. <br>
+                    Thank you for visiting my website.
                 </p>
                 <div class="reveal flex skills-container">
                     <div class="flex skills">
@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 <div class="contact">
-                    <a href="#contact-form">Contactez moi<i class="fa-solid fa-arrow-down white bgGreen"></i></a>
+                    <a href="#contact-form">Contact me<i class="fa-solid fa-arrow-down white bgGreen"></i></a>
                 </div>
             </div>
         </section>
@@ -183,17 +183,17 @@
             </div>
         </section>
         <section class="reveal nunito" id="contact-form">
-            <H2 class="nunito black reveal">Contactez moi</H2>
+            <H2 class="nunito black reveal">Contact me</H2>
             <form id="my-form" action="https://formspree.io/f/xknagrez" method="POST">
                 <label>Email:</label>
                 <input type="email" name="email" />
-                <label>Nom:</label>
+                <label>Last name:</label>
                 <input type="text" name="Nom" />
-                <label>Prénom:</label>
+                <label>First name:</label>
                 <input type="text" name="Prénom" />
                 <label>Message:</label>
                 <textarea name="message"></textarea>
-                <button id="my-form-button">Envoyer</button>
+                <button id="my-form-button">Submit</button>
                 <p id="my-form-status"></p>
             </form>
         </section>
