@@ -93,11 +93,11 @@ header {
     z-index: 1;
 }
 
-.language-options {
+.languageOptions {
     display: flex;
 }
 
-.language-options a {
+.languageOptions a {
     color: #3A8C75;
     margin: 0 0.8em
 }
@@ -521,19 +521,19 @@ article h4 {
 
 /* ---------------contact-form ------------*/
 
-#contact-form {
+#contactForm {
     width: 90%;
     margin: auto;
 
 }
 
-#contact-form H2 {
+#contactForm H2 {
     font-size: 2.5em;
     margin: 2em 0 2em 0;
     position: relative;
 }
 
-#contact-form H2::after {
+#contactForm H2::after {
 
     content: "";
     width: 1.5em;
@@ -546,7 +546,7 @@ article h4 {
 
 }
 
-#my-form {
+#myForm {
     background-color: transparent;
     padding: 16px;
     color: #A67841;
@@ -556,14 +556,14 @@ article h4 {
     margin: auto;
 }
 
-#my-form label {
+#myForm label {
     font-size: 20px;
     display: block;
 }
 
 
-#my-form input,
-#my-form textarea {
+#myForm input,
+#myForm textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 20px 0;
@@ -573,17 +573,17 @@ article h4 {
     transition: all 0.5s ease;
 }
 
-#my-form textarea {
+#myForm textarea {
     min-height: 10em;
 }
 
-#my-form input:focus,
-#my-form textarea:focus {
+#myForm input:focus,
+#myForm textarea:focus {
     border-color: #3A8C75;
     outline: none;
 }
 
-#my-form-button {
+#myForm-button {
     width: 25%;
     min-width: 103px;
     background-color: #3A8C75;
@@ -597,11 +597,11 @@ article h4 {
     transition: all 0.2s ease;
 }
 
-#my-form-button:hover {
+#myForm-button:hover {
     background-color: #3a8c75d5;
 }
 
-#my-form-status {
+#myForm-status {
     margin-top: 12px;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -698,6 +698,10 @@ footer i {
 
     }
 
+    #myForm {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 1180px) {
@@ -770,6 +774,10 @@ footer i {
     .articles {
         grid-column-gap: 3em;
         grid-row-gap: 1em;
+    }
+
+    #myForm {
+        width: 90%;
     }
 
     footer {
@@ -882,16 +890,16 @@ footer i {
         margin: 3px 0;
     }
 
-    .language-options {
+    .languageOptions {
         visibility: hidden;
     }
 
-    .language-options-side {
+    .languageOptionsSide {
         justify-content: center;
     }
 
-    .language-options a,
-    .language-options-side a {
+    .languageOptions a,
+    .languageOptionsSide a {
         margin: 0 0.4em;
         font-weight: 300;
         color: #3A8C75;
@@ -932,7 +940,7 @@ footer i {
 
     #MyJob H2,
     #Portfolio H2,
-    #contact-form H2 {
+    #contactForm H2 {
         font-size: 2em;
     }
 
@@ -967,11 +975,8 @@ footer i {
         grid-row-gap: 1em;
     }
 
-    #my-form {
-        width: 90%;
-    }
 
-    #my-form textarea {
+    #myForm textarea {
         min-height: 6.5em;
     }
 
@@ -1036,7 +1041,7 @@ footer i {
 
     #MyJob H2,
     #Portfolio H2,
-    #contact-form H2 {
+    #contactForm H2 {
         font-size: 1.5em;
         margin-bottom: 2em;
     }
@@ -1120,7 +1125,7 @@ footer i {
 
     #MyJob H2,
     #Portfolio H2,
-    #contact-form H2 {
+    #contactForm H2 {
         font-size: 1.3em;
         margin-bottom: 2em;
     }
